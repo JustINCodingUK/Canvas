@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main extends JFrame implements ActionListener, MouseListener, MouseMotionListener {
     
-	static String h;
+    static String h;
     static Point p1;
     static Point p2;
     static Color color1;
@@ -21,7 +21,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
 	public static void main(String[] args) throws Exception {  
 		 
 	
-		JButton b = new JButton("Color");
+	JButton b = new JButton("Color");
         JButton rect = new JButton("Rectangle");
         JButton r1  =new JButton("On");
         JButton r2 = new JButton("Off");
@@ -39,7 +39,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
         
         
         b.setBounds(370,20,100,20);
-		r1.setBounds(130,60,50,20);   
+	r1.setBounds(130,60,50,20);   
         r2.setBounds(180,60,55,20);    
         size.setBounds(500,20,100,20);
         c.setBounds(20,90,100,20);
@@ -60,7 +60,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
         c.setEnabled(false);
         fill.setEnabled(false);
         
-		    JFrame f = new JFrame("Canvas");
+	    JFrame f = new JFrame("Canvas");
             f2.setEnabled(false);
             
 		    rect.setBounds(20,60,100,20);
@@ -180,8 +180,8 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
             	public void actionPerformed(ActionEvent e) {
             		JFrame error = new JFrame("Error");
             		JButton ok =  new JButton("OK");
-    				JPanel j = new JPanel();
-    				JLabel l = new JLabel();
+    			JPanel j = new JPanel();
+    			JLabel l = new JLabel();
             		JFrame set = new JFrame("Thickness");
             		JPanel gh = new JPanel();
             		gh.setLayout(null);
@@ -232,7 +232,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
 		    JPanel p = new JPanel() {
         
 				{
-					 setLayout(null);
+				 setLayout(null);
             	addMouseListener(new MouseAdapter() {
                  	public void mousePressed(MouseEvent e) {
                  		p1=e.getPoint();
@@ -250,7 +250,7 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
      				
      				
      				public void mouseDragged(MouseEvent e) {
-     					p2=e.getPoint();
+     		                    p2=e.getPoint();
      				    xList.add(p2.x);
      				    yList.add(p2.y);
      					repaint();
@@ -327,26 +327,26 @@ public class Main extends JFrame implements ActionListener, MouseListener, Mouse
             
                  
             	
-            JColorChooser ch = new JColorChooser();
+           JColorChooser ch = new JColorChooser();
            p.add(line);
            p.add(l1);
            p.add(l2);
-            p.add(fill);
-            p.add(c);
+           p.add(fill);
+           p.add(c);
            p.add(c1);
            p.add(c2);
-            p.add(r1);
+           p.add(r1);
            p.add(r2);
-             p.add(rect);
-            f.setSize(800,600);
-            p.add(b);
-            f.add(p);
-            f.setVisible(true);
-            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            f.setLocationRelativeTo(null);
-            p.add(size);
-            p.add(f1);
-            p.add(f2);
+           p.add(rect);
+           f.setSize(800,600);
+           p.add(b);
+           f.add(p);
+           f.setVisible(true);
+           f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+           f.setLocationRelativeTo(null);
+           p.add(size);
+           p.add(f1);
+           p.add(f2);
 		 
 		    
 }
