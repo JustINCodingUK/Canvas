@@ -6,4 +6,4 @@ And also, for seeing the output, Follow these steps:
 3. Type "cd downloads" without quotation marks (If path is set to C:\Users\<Your-UserName>\) 
 4. Make sure you have at least Java SE 15 Installed.
 5. Type "java Main.java" without quotation marks.
-6. After 10 secs, a JFrame should appear. Try out all the features :D.
+6. After few secs, a JFrame should appear. Try out all the features :D.
